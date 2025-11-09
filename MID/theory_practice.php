@@ -2,9 +2,23 @@
 <html lang="en">
 
 <head>
+    <style>
+        .p{
+            
+            background-color: black;
+            width: 500px;
+            height: 50vmax; /* 100vmax meaning full window coverage, 50vmax for half */
+            margin: 0 auto; /* auto center the content  */
+        }
+        .body{
+            background-color: blueviolet;
+        }
+
+
+    </style>
 
 </head>
-<body>
+<body class="body">
 
 
 <h2>9/11/2025</h2>
@@ -13,7 +27,7 @@
 
 <tagname>Content goes here...</tagname>
 
-<div background-color="red" width="500" height="600"></div>
+<div class="p"></div>
 
 
 
