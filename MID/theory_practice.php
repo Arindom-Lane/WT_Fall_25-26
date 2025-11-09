@@ -1,40 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 </head>
 <body>
-<style>
-        .p{
-            background-color: #673bb7;
-            padding: 1000px;
-        
-        }
-        body{
-            background-color: #f0ebf8;
-            
-
-        }
-        
 
 
-    </style>
+<h2>9/11/2025</h2>
+<p>I want to learn html and css if i can at least this is what i thinki can do as long as i dont procrastinate</p>
+<a href="https://www.aiub.edu/">aiub</a>
 
-<table>
+<tagname>Content goes here...</tagname>
 
-<tr>
-<td class=p></td>
+<div background-color="red" width="500" height="600"></div>
 
 
 
 
 
-</tr>
 
-
-
-</table>
 
 
 
 </body>
+
+
 </html>
