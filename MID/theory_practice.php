@@ -5,21 +5,24 @@
     <style>
         .p{
             
-            background-color: lightblue;
+            background-color: Tomato;
             width: 500px;
             height: 50vmax; /* 100vmax meaning full window coverage, 50vmax for half */
-            
-            margin: 0 auto; /* auto center the content  */
+            border: 22px solid deepskyblue;
+            padding: 30px;
+            margin: 50px
+            /* margin: 0 auto; auto center the content  */
         }
         .p1{
             
-            background-color: lightblue;
+            background-color: Tomato;
             width: 590px;
             height: 50px; /* 100vmax meaning full window coverage, 50vmax for half */
             
         }
         .body{
             background-color: DodgerBlue;
+            color: white;
         }
 
 
@@ -58,8 +61,8 @@ ignores it.
 <a href="https://www.aiub.edu/">aiub</a>
 
 <tagname>Content goes here...</tagname>
-
-<div class="p" alt="Girl with a jacket"></div>
+<center>
+<div class="p" alt="Girl with a jacket"></div></center>
 <center>
 <div class="p1"></div>
 </center>
