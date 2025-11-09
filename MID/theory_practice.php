@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 </head>
 <body>
+<style>
+        .p{
+            background-color: #673bb7;
+            padding: 1000px;
+        
+        }
+        body{
+            background-color: #f0ebf8;
+            
 
-<h3 style="color: aquamarine; "
-    
+        }
+        
+
+
+    </style>
+
+<table>
+
+<tr>
+<td class=p></td>
+
+
+
+
+
+</tr>
+
+
+
+</table>
+
+
+
 </body>
 </html>
