@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -125,4 +125,82 @@ ignores it.
 </body>
 
 
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+<body>
+
+<h1 > Learning JS</h1>
+<h2> this is our class</h2>
+    <script>
+        var name = "arindom";
+        let number = 1234;
+        var name_2 = "Paul"
+        const last_name = "HObe";
+
+
+        document.write("Hello WT_O D") //
+        console.log("Hello WT_O C")
+        alert("Hello WT_O A")
+
+
+
+        // var body = document.gerElementById("demo"); //it is for DOM, class name er moto, id name tag e bosiye access kora jay
+        // body.innerHTML = "GOod boy"
+
+
+
+        console.log(typeof name);
+        console.log(typeof number);
+        console.log(typeof name_2);
+        console.log(typeof last_name);
+        console.log(typeof undefined);
+
+
+        
+        
+
+        
+        
+
+
+
+    </script>
+
+    <input type="text" id="myInput" placeholder="Enter text here">
+        <button onclick="processInput()">Submit</button>
+
+        <p id="output"></p>
+
+        <script>
+            
+        function processInput() {
+            // 1. Get the input element by its ID
+            const inputElement = document.getElementById('myInput');
+
+            // 2. Read the value from the input
+            const inputValue = inputElement.value;
+
+            // 3. Use the value (Example: Display it in a paragraph)
+            const outputElement = document.getElementById('output');
+            outputElement.textContent = 'You entered: ' + inputValue;
+
+        }
+        processInput()
+        
+        </script>
+
+    <input type="text" name="input">
+</body>
 </html>
