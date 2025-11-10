@@ -127,7 +127,7 @@ ignores it.
 
 </html> -->
 
-
+<!-- 
 
 
 <!DOCTYPE html>
@@ -202,5 +202,35 @@ ignores it.
         </script>
 
     <input type="text" name="input">
+</body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <style>
+        .p{
+            border: 2px solid powderblue;
+            padding: 30px;
+
+        }
+
+
+
+    </style>
+
+    <center class="p"><h1>Trying out border</h1></center>
+
+
+
+    
 </body>
 </html>
