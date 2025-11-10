@@ -217,16 +217,29 @@ ignores it.
 <body>
 
     <style>
-        .p{
+        .p:hover{
             border: 2px solid powderblue;
-            padding: 30px;
+            
+            padding: auto;
+            /* margin: 50px; */
+            color:aquamarine;
+            background-color: lightcyan;
+        }
 
+        .p:active{
+            border: 2px solid powderblue;
+            
+            padding: auto;
+            /* margin: 50px; */
+            color:black;
+            background-color: white;
         }
 
 
 
     </style>
 
+    <center class="p"><h1>Trying out border</h1></center>
     <center class="p"><h1>Trying out border</h1></center>
 
 
