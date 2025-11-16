@@ -206,7 +206,7 @@ ignores it.
 </html> -->
 
 
-
+<!-- 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -217,12 +217,18 @@ ignores it.
 <body>
 
     <style>
-        .p:hover{
-            border: 2px solid powderblue;
-            
+        .p{
+            border: 5px solid blue;
+
+            border-style: dotted inset outset double;
+
+
+
+
+
             padding: auto;
-            /* margin: 50px; */
-            color:aquamarine;
+            margin: 50px;
+            color:blue;
             background-color: lightcyan;
         }
 
@@ -246,4 +252,57 @@ ignores it.
 
     
 </body>
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+div.mycontainer {
+  width:100%;
+  overflow:auto;
+  
+}
+div.mycontainer  {
+  width:33%;  
+  float:auto;
+}
+h2{
+    padding: 10px;
+}
+</style>
+<body>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 9 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 700,000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has over 4 million inhabitants.</p>
+  </div>
+
+</div>
+
+</body>
 </html>
+
+
+
+
+
+
+
+
