@@ -29,9 +29,10 @@
 .lowerBox{
     position: relative;
     width: 600px;
-    height: 50px;
+    height: auto;
     border: 1px solid;
     border-radius: 6px;
+    padding: 5px;
 
 
 }
