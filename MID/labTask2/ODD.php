@@ -8,7 +8,7 @@
 <body style="background-color: #ece9f4ff;">
 
 <center>
-<form onsubmit="">
+<form onsubmit="return btnClick()">
 
     <div class="box2">
         <center><h1>Student Registration</h1></center>
@@ -32,7 +32,8 @@
         <div id="okey"></div>
 
     </div>
-
+</form>
+    <form onsubmit="">
     <div class="box2">
         <center><h2>Course Registration</h2></center>
 
@@ -40,7 +41,7 @@
         <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
 
     
-        <button class="submit-button">
+        <button type="submit" class="submit-button">
                     Add Course
         </button><br><br>
         
@@ -56,6 +57,7 @@
 
 
     <link rel="stylesheet" href="style.css">
+    <script src="myJs.js"></script> 
 
 </form>
 </center>
