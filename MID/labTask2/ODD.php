@@ -45,9 +45,9 @@
                     Add Course
         </button><br><br>
         
-        <div class="lowerBox"> 
+        <div class="lowerBox" id="lowBox"> 
             <label id="viewCourse"></label>
-            <button class="btnDel">DELETE</button>
+            <button class="btnDel" id="dltBtn" onclick="dltBtn()">DELETE</button>
         </div>
 
         <div id="error2"></div>

@@ -7,6 +7,8 @@ let okmsg = document.getElementById('okey');
 let courseName = document.getElementById('courseInput');
 let viewCourse = document.getElementById('viewCourse');
 
+let lowbox = document.getElementById('lowBox');
+
 
 
 
@@ -32,4 +34,7 @@ function addBtnClick(){
     return false;
 
 }
-function 
+function dltBtn(){
+    lowbox.style.display = "none";
+
+}
