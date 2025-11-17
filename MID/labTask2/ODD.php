@@ -10,17 +10,21 @@
 <center>
 <form onsubmit="">
 
-    <div>
-        <label name="FullName">Full Name:</label><br>
-        <input for="FullName" type="text"><br>
+    <div class="box2">
+        <label id="FullName">Full Name:</label><br>
+        <input for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
 
-        <label></label>
+        <label id="email">Email:</label><br>
+        <input for="email" type="text" placeholder="Your answer" id="emailInput" required ><br><br>
+
+        <label id="pass">Password:</label><br>
+        <input for="pass" type="password" id="passInput" required ><br><br>
 
 
     </div>
 
 
-
+    <link rel="stylesheet" href="style.css">
 
 </form>
 </center>
