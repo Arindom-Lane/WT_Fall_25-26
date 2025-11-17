@@ -8,7 +8,7 @@ let okmsg = document.getElementById('okey');
 
 function btnClick(){
 
-if(email.includes('@') && password === Cpassword){
+if(email.value.includes('@') && password.value === Cpassword.value){
     okmsg.innerHTML = `SUCCESS! <br> your name: ${name.value} and id: ${email.value}`;
 }
 else{alert("Validation Failed");
@@ -17,7 +17,6 @@ else{alert("Validation Failed");
 if 
     
 
-return false;
 
 
 }

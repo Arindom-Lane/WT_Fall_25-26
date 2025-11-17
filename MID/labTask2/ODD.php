@@ -38,7 +38,7 @@
         <center><h2>Course Registration</h2></center>
 
         <label id="FullName">Course Name:</label><br>
-        <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
+        <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="courseInput" required ><br><br>
 
     
         <button type="submit" class="submit-button">
@@ -50,19 +50,20 @@
             <button class="btnDel">DELETE</button>
         </div>
 
-        <div id="error"></div>
-        <div id="okey"></div>
+        <div id="error2"></div>
+        <div id="okey2"></div>
 
     </div>
 
 
-    <link rel="stylesheet" href="style.css">
-    <script src="myJs.js"></script> 
+    
 
 </form>
 </center>
+
+<link rel="stylesheet" href="style.css">
+    <script src="myJs.js"></script> 
 </body>
 
-    
-</body>
+
 </html>
