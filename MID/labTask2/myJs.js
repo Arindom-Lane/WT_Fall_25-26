@@ -30,11 +30,12 @@ else{
 
 function addBtnClick(){
 
-    viewCourse.value.innerHTML = courseName.value;
+    viewCourse.innerHTML = courseName.value;
+    lowbox.style.display = 'block'
     return false;
 
 }
 function dltBtn(){
-    lowbox.style.display = "none";
+    lowBox.style.display = "none";
 
 }
