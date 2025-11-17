@@ -4,6 +4,9 @@ let password = document.getElementById('passInput');
 let Cpassword = document.getElementById('passInputConfirm');
 let okmsg = document.getElementById('okey');
 
+let courseName = document.getElementById('courseInput');
+
+
 
 
 function btnClick(){
@@ -18,4 +21,12 @@ else{
     return false;
 }
 
+}
+
+function addBtnClick(){
+
+
+
+
+    
 }

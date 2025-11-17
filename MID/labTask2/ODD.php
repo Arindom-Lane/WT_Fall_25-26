@@ -37,8 +37,8 @@
     <div class="box2">
         <center><h2>Course Registration</h2></center>
 
-        <label id="FullName">Course Name:</label><br>
-        <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="courseInput" required ><br><br>
+        <label id="courseName">Course Name:</label><br>
+        <input class="inputBOx" for="courseName" type="text" placeholder="Your answer" id="courseInput" required ><br><br>
 
     
         <button type="submit" class="submit-button">
