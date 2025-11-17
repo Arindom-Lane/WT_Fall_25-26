@@ -5,21 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #ece9f4ff;">
 
 <center>
 <form onsubmit="">
 
     <div class="box2">
+        <center><h1>Student Registration</h1></center>
+
         <label id="FullName">Full Name:</label><br>
-        <input for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
+        <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
 
         <label id="email">Email:</label><br>
-        <input for="email" type="text" placeholder="Your answer" id="emailInput" required ><br><br>
+        <input class="inputBOx" for="email" type="text" placeholder="Your answer" id="emailInput" required ><br><br>
 
         <label id="pass">Password:</label><br>
-        <input for="pass" type="password" id="passInput" required ><br><br>
+        <input class="inputBOx" for="pass" type="password" id="passInput" required ><br><br>
 
+        <label id="Cpass">Confirm Password:</label><br>
+        <input class="inputBOx" for="Cpass" type="password" id="passInputConfirm" required ><br><br>
+
+        <button type="submit" class="submit-button">
+                    Submit
+        </button>
+        <div id="error"></div>
+        <div id="okey"></div>
+
+    </div>
+
+    <div class="box2">
+        <center><h2>Course Registration</h2></center>
+
+        <label id="FullName">Course Name:</label><br>
+        <input class="inputBOx" for="FullName" type="text" placeholder="Your answer" id="nameInput" required ><br><br>
+
+    
+        <button class="submit-button">
+                    Add Course
+        </button><br><br>
+        
+        <div class="lowerBox"> 
+            <label id="course"></label>
+            <button class="btnDel">DELETE</button>
+        </div>
+
+        <div id="error"></div>
+        <div id="okey"></div>
 
     </div>
 

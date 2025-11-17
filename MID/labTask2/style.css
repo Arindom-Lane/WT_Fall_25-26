@@ -1,10 +1,50 @@
 .box2{
     background-color: white;
-    padding: 30px 20px 30px 20px;
+    padding: 10px 20px 30px 20px;
     height: auto;
     width: 600px;
     border-radius: 10px;
-    margin: 15px;
+    margin: 20px;
     text-align: left;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06); /* Added shadow for visual appeal */
+}
+.inputBOx{
+    width: 600px;
+    height: 20px;
+}
+
+.submit-button {
+    background-color: #3d0db5;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.submit-button:hover {
+    background-color: #2b088e;
+}
+
+.lowerBox{
+    position: relative;
+    width: 600px;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 6px;
+
+
+}
+.btnDel{
+
+    border-color: red;
+    background-color: #fdc9be;
+    color: white;
+    border-radius: 4px;
+    position: absolute;
+    position: absolute;
+  bottom: 2px;
+  right: 2px;
+
+
 }
