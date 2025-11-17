@@ -33,7 +33,7 @@
 
     </div>
 </form>
-    <form onsubmit="">
+    <form onsubmit="return addBtnClick()">
     <div class="box2">
         <center><h2>Course Registration</h2></center>
 
@@ -46,7 +46,7 @@
         </button><br><br>
         
         <div class="lowerBox"> 
-            <label id="course"></label>
+            <label id="viewCourse"></label>
             <button class="btnDel">DELETE</button>
         </div>
 

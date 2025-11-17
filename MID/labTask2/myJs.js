@@ -5,6 +5,9 @@ let Cpassword = document.getElementById('passInputConfirm');
 let okmsg = document.getElementById('okey');
 
 let courseName = document.getElementById('courseInput');
+let viewCourse = document.getElementById('viewCourse');
+
+
 
 
 
@@ -25,8 +28,8 @@ else{
 
 function addBtnClick(){
 
+    viewCourse.value.innerHTML = courseName.value;
+    return false;
 
-
-
-    
 }
+function 
