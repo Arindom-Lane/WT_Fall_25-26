@@ -7,16 +7,24 @@
 </head>
 <body>
 
-
+<center>
 <form onsubmit="">
 
+    <div>
+        <label name="FullName">Full Name:</label><br>
+        <input for="FullName" type="text"><br>
 
+        <label></label>
+
+
+    </div>
 
 
 
 
 </form>
-
+</center>
+</body>
 
     
 </body>
