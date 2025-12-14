@@ -1,53 +1,45 @@
 <?php
 $nameInput = "";
+$emailInput = "";
 $error = "";
-$emailInput="";
-
+$isValid = true;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
+    // NAME
     if (empty($_POST["nameInput"])) {
         $error = "Name is required";
-    } 
-    else {
+        $isValid = false;
+    } else {
         $nameInput = trim($_POST["nameInput"]);
-
         if (strlen($nameInput) < 3) {
-            $error = "Name must be at least 3 characters long";
-        }
-        elseif (!preg_match("/^[a-zA-Z\- ]+$/", $nameInput)) {
+            $error = "Name must be at least 3 characters";
+            $isValid = false;
+        } elseif (!preg_match("/^[a-zA-Z\- ]+$/", $nameInput)) {
             $error = "Only letters, space and dash allowed";
-        }
-        else {
-            echo "<script>alert('Form submitted successfully');</script>";
+            $isValid = false;
         }
     }
-}
-$flag = false;
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // EMAIL
+    if (empty($_POST["email"])) {
+        $error = "Email is required";
+        $isValid = false;
+    } else {
+        $emailInput = trim($_POST["email"]);
+        if (!filter_var($emailInput, FILTER_VALIDATE_EMAIL)) {
+            $error = "Invalid email format";
+            $isValid = false;
+        }
+    }
 
-    if (empty($_POST["emailInput"])) {
-        $error = "email is required";
-    } 
-    else {
-        $nameInput = trim($_POST["nameInput"]);
-
-        if (strlen($emailInput) < 5) {
-            $error = "Write a valid email";
-            $flag = true;
-        }
-        elseif (!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/
-", $nameInput)) {
-            $error = "Write a valid email";
-            $flag = true;
-        }
-        elseif($flag == false) {
-            echo "<script>alert('Form submitted successfully');</script>";
-        }
+    // SUCCESS
+    if ($isValid) {
+        echo "<script>alert('Form submitted successfully');</script>";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -67,7 +59,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <fieldset>
         <legend>NAME</legend>
-        <input type="text" name="nameInput" value="<?php echo $nameInput;?>">
+        <input type="text" name="nameInput" value="">
     </fieldset>
      
 
@@ -99,7 +91,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <fieldset>
         <legend>BLOOD GROUP</legend>
         <select name="blood">
-            <option value="">Select</option>
+            <option value=""> </option>
             <option>A+</option>
             <option>A-</option>
             <option>B+</option>
