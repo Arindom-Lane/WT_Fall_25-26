@@ -1,3 +1,54 @@
+<?php
+$nameInput = "";
+$error = "";
+$emailInput="";
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($_POST["nameInput"])) {
+        $error = "Name is required";
+    } 
+    else {
+        $nameInput = trim($_POST["nameInput"]);
+
+        if (strlen($nameInput) < 3) {
+            $error = "Name must be at least 3 characters long";
+        }
+        elseif (!preg_match("/^[a-zA-Z\- ]+$/", $nameInput)) {
+            $error = "Only letters, space and dash allowed";
+        }
+        else {
+            echo "<script>alert('Form submitted successfully');</script>";
+        }
+    }
+}
+$flag = false;
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    if (empty($_POST["emailInput"])) {
+        $error = "email is required";
+    } 
+    else {
+        $nameInput = trim($_POST["nameInput"]);
+
+        if (strlen($emailInput) < 5) {
+            $error = "Write a valid email";
+            $flag = true;
+        }
+        elseif (!preg_match("/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.com$/
+", $nameInput)) {
+            $error = "Write a valid email";
+            $flag = true;
+        }
+        elseif($flag == false) {
+            echo "<script>alert('Form submitted successfully');</script>";
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,31 +61,6 @@
     </style>
 </head>
 
-<?php
-$nameInput = "";
-$error="";
-
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-    if (empty($_POST["nameInput"])) {
-        echo "<script>alert('Input your name');</script>";
-    }
-    else {
-        $nameInput = trim($_POST["nameInput"]);
-
-        if (strlen($nameInput) < 1) {
-            echo "<script>alert('Input a valid name');</script>";
-        }
-        elseif (!preg_match("/^[a-zA-Z\- ]+$/", $nameInput)) {
-            echo "<script>alert('Name must contain only letters, space or dash');</script>";
-        }
-        else {
-            echo "<script>alert('Form submitted successfully');</script>";
-        }
-    }
-}
-?>
-
 <body>
 
 <form method="post" action="">
@@ -43,16 +69,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <legend>NAME</legend>
         <input type="text" name="nameInput" value="<?php echo $nameInput;?>">
     </fieldset>
-    <span class="error"></span>
+     
 
     <fieldset>
         <legend>EMAIL</legend>
-        <input type="email" name="email" >
+        <input type="email" name="email" required value="<?php echo $emailInput ?>">
     </fieldset>
 
     <fieldset>
         <legend>DATE OF BIRTH</legend>
-        <input type="date" name="dob" >
+        <input type="date" name="dob" required>
     </fieldset>
 
     <fieldset>
@@ -88,6 +114,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </fieldset>
 
 </form>
+<div><span class="error"><?php echo $error; ?></span></div>
 
 </body>
 </html>
